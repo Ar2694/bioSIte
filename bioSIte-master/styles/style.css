@@ -1,0 +1,227 @@
+/** Global style**/
+
+body {
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.953em;
+}
+body::before {
+    content: " ";
+    background: url('../Images/background-image.jpg') center no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+}
+
+h1,
+h2 {
+    font-family: Verdana, Times, "Times New Roman", serif;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+/** Navigation **/
+
+nav {
+    background-color: rgba(164, 156, 116, 0.8);
+    border-bottom: 5px ridge rgba(248,234,165,0.97);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 12px 40px;
+}
+
+nav>div {
+    width: 50%;
+    float: left;
+}
+
+nav h5 {
+    margin: 0;
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: 500;
+}
+
+nav ul {
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+nav a:hover {
+    color: rgba(247, 206, 209, 1.0);
+}
+
+/** Banner **/
+
+.banner {
+    height: 750px;
+    margin: 0;
+}
+
+.banner h1 {
+    color: rgb(253,245,246);
+    text-align: center;
+    line-height:650px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.563em;
+    margin: 0;
+}
+
+/** Biography **/
+
+.main-content {
+    background-color: rgba(236, 226, 176, 0.85);
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    border: 10px ridge rgba(248,234,165,0.97);
+    border-bottom: none;
+        border-radius: 10px 10px 0 0;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+
+
+
+.intro {
+    width: 960px!important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.intro img {
+    float: left;
+    margin: -260px 25px 0 0;
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    border:4px ridge rgba(248,234,165,0.97);
+    border-radius: 20px;
+
+}
+
+.intro h2 {
+    font-size: 1em;
+    margin-left: 324px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.intro p {
+    margin: 10px;
+}
+
+
+/*** Photo Album **/
+ h2#favoritePhotos{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 85px;
+    border-top: 10px ridge rgba(248,234,165,0.97);
+    padding-top: 20px;
+}
+.main-content .row:not(.intro) {
+    clear: both;
+}
+
+.main-content .row .odd {
+    text-align: left;
+}
+
+.main-content .row .even {
+    text-align: right;
+}
+.row .even,
+.row .odd{
+
+        border-bottom: 10px ridge rgba(248,234,165,0.97);
+    padding: 50px 15px;
+    
+}
+.row .lastOdd{
+    border: none!important;
+}
+
+figure * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+figure figcaption {
+    font-size: 0.64em;
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+}
+
+figure img {
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    border: 5px ridge rgba(248,234,165,0.97);
+    border-radius: 20px;
+    padding: 1px;
+    margin-right: 15px;
+}
+.button-container{
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+#btn:hover {
+    background-color: rgba(183, 110, 121, 0.8);
+    color: rgba(247, 206, 209, 1.0);
+}
+
+#btn  {
+    display: block;
+    font-size: 0.6em!important;
+    padding: 12px 24px;
+    background-color: rgba(183, 110, 121, 0.4);
+    border-radius: 4px;
+    color: #333333;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    text-decoration: none;
+    max-width: 150px;
+ margin: 0 auto;
+}
+
+
+/** Footer **/
+footer {
+    background-color: rgba(164, 156, 116, 0.8);
+    box-sizing: content-box!important;
+    border-top: 5px solid rgba(236, 226, 176, 0.85);
+    color: #ECE2B0;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px 50px;
+}
