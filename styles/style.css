@@ -1,5 +1,5 @@
 /** Global style**/
-html{
+html {
     overflow-x: hidden;
 }
 body {
@@ -36,10 +36,9 @@ p {
 
 nav {
 
-    
-   -webkit-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
     background-color: rgba(164, 156, 116, 0.8);
     border-bottom: 5px ridge rgba(248,234,165,0.97);
     position: absolute;
@@ -47,10 +46,10 @@ box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
     right: 0;
     padding: 12px 40px;
 }
-nav .nav-content{
-  max-width: 1360px;
+nav .nav-content {
+    max-width: 1360px;
     width: 100%;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 nav .nav-content div {
     width: 50%;
@@ -80,8 +79,8 @@ nav a {
     font-style: italic;
     white-space: nowrap;
 }
-nav a i{
-margin-right: 5px;
+nav a i {
+    margin-right: 5px;
 }
 nav a:hover {
     color: rgba(247, 206, 209, 1.0);
@@ -96,10 +95,10 @@ nav a:hover {
 }
 
 .banner h1 {
-  
+
     color: rgb(253,245,246);
     text-align: center;
-    line-height:650px;
+    line-height: 650px;
     font-weight: 400;
     font-style: italic;
     font-size: 1.563em;
@@ -109,21 +108,18 @@ nav a:hover {
 /** Biography **/
 
 .main-content {
-      margin: 0 auto;
+    margin: 0 auto;
     background-color: rgba(236, 226, 176, 0.85);
-   -webkit-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
     border: 10px ridge rgba(248,234,165,0.97);
     border-bottom: none;
-        border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
     max-width: 1360px;
     width: 100%;
-  
+    box-sizing: border-box!important;
 }
-
-
-
 
 .intro {
     max-width: 960px!important;
@@ -133,11 +129,11 @@ box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
 
 .intro img {
     float: left;
-    margin: -260px 50px 20px 0px;
--webkit-box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
-box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
-    border:4px ridge rgba(248,234,165,0.97);
+    margin: -260px 50px 20px 0;
+    -webkit-box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
+    box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
+    border: 4px ridge rgba(248,234,165,0.97);
     border-radius: 20px;
 
 }
@@ -155,9 +151,8 @@ box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
 
 }
 
-
 /*** Photo Album **/
- h2#favoritePhotos{
+h2#favoritePhotos {
     font-size: 1em;
     text-align: center;
     margin-top: 85px;
@@ -176,13 +171,13 @@ box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
     text-align: right;
 }
 .row .even,
-.row .odd{
+.row .odd {
 
-        border-bottom: 10px ridge rgba(248,234,165,0.97);
+    border-bottom: 10px ridge rgba(248,234,165,0.97);
     padding: 50px 15px;
-    
+
 }
-.row .lastOdd{
+.row .lastOdd {
     border: none!important;
 }
 
@@ -207,17 +202,16 @@ figure img {
     padding: 1px;
     margin-right: 15px;
 }
-.button-container{
+.button-container {
     margin-top: 20px;
     padding-bottom: 50px;
 }
-
 #btn:hover {
     background-color: rgba(183, 110, 121, 0.8);
     color: rgba(247, 206, 209, 1.0);
 }
 
-#btn  {
+#btn {
     display: block;
     font-size: 0.6em!important;
     padding: 12px 24px;
@@ -232,9 +226,8 @@ figure img {
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
     text-decoration: none;
     max-width: 150px;
- margin: 0 auto;
+    margin: 0 auto;
 }
-
 
 /** Footer **/
 footer {
@@ -246,7 +239,37 @@ footer {
 }
 
 footer p {
-   text-align: center;
+    text-align: center;
     padding: 20px 50px;
     margin-bottom: 0;
+}
+@media only screen and (max-width: 920px) {
+    /** Global style **/
+    body {
+        font-size: 1.6em;
+    }
+    
+    /**Biography**/
+    .intro {
+
+        padding: 0 15px;
+    }
+
+    .intro img {
+
+        margin: -250px 40px 20px 0;
+
+        width: 210px!important;
+    }
+
+    .intro h2 {
+        margin-left: 270px;
+
+    }
+
+    /** Photo Album **/
+    figure img {
+        margin-bottom: 20px;
+    }
+
 }
