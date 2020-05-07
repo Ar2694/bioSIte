@@ -1,9 +1,13 @@
 /** Global style**/
-
+html{
+    overflow-x: hidden;
+}
 body {
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.953em;
+    min-width: 520px;
+    width: 100%;
 }
 body::before {
     content: " ";
@@ -31,6 +35,11 @@ p {
 /** Navigation **/
 
 nav {
+
+    
+   -webkit-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
     background-color: rgba(164, 156, 116, 0.8);
     border-bottom: 5px ridge rgba(248,234,165,0.97);
     position: absolute;
@@ -38,8 +47,12 @@ nav {
     right: 0;
     padding: 12px 40px;
 }
-
-nav>div {
+nav .nav-content{
+  max-width: 1360px;
+    width: 100%;
+        margin: 0 auto;
+}
+nav .nav-content div {
     width: 50%;
     float: left;
 }
@@ -64,9 +77,15 @@ nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 0.7em;
+    font-style: italic;
+    white-space: nowrap;
+}
+nav a i{
+margin-right: 5px;
 }
 nav a:hover {
     color: rgba(247, 206, 209, 1.0);
+
 }
 
 /** Banner **/
@@ -77,6 +96,7 @@ nav a:hover {
 }
 
 .banner h1 {
+  
     color: rgb(253,245,246);
     text-align: center;
     line-height:650px;
@@ -89,32 +109,34 @@ nav a:hover {
 /** Biography **/
 
 .main-content {
+      margin: 0 auto;
     background-color: rgba(236, 226, 176, 0.85);
-    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+   -webkit-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 39px 30px rgba(0,0,0,0.75);
     border: 10px ridge rgba(248,234,165,0.97);
     border-bottom: none;
         border-radius: 10px 10px 0 0;
     max-width: 1360px;
-    margin: 0 auto;
+    width: 100%;
+  
 }
 
 
 
 
 .intro {
-    width: 960px!important;
+    max-width: 960px!important;
     margin: 0 auto;
     padding: 0;
 }
 
 .intro img {
     float: left;
-    margin: -260px 25px 0 0;
-    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    margin: -260px 50px 20px 0px;
+-webkit-box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
+box-shadow: 1px 0px 41px 11px rgba(0,0,0,0.75);
     border:4px ridge rgba(248,234,165,0.97);
     border-radius: 20px;
 
@@ -122,7 +144,7 @@ nav a:hover {
 
 .intro h2 {
     font-size: 1em;
-    margin-left: 324px;
+    margin-left: 350px;
     padding-top: 20px;
     width: 100%;
     text-align: left;
@@ -130,6 +152,7 @@ nav a:hover {
 
 .intro p {
     margin: 10px;
+
 }
 
 
@@ -215,6 +238,7 @@ figure img {
 
 /** Footer **/
 footer {
+    width: 100%;
     background-color: rgba(164, 156, 116, 0.8);
     box-sizing: content-box!important;
     border-top: 5px solid rgba(236, 226, 176, 0.85);
@@ -222,6 +246,7 @@ footer {
 }
 
 footer p {
-    margin: 0;
+   text-align: center;
     padding: 20px 50px;
+    margin-bottom: 0;
 }
