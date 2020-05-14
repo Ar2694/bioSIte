@@ -135,7 +135,7 @@ nav a:hover {
 }
 
 .intro {
-    max-width: 960px!important;
+    max-width: 980px!important;
     margin: 0 auto;
     padding: 0;
 }
@@ -160,7 +160,7 @@ nav a:hover {
 }
 
 .intro p {
-    margin: 10px 7px;
+    margin: 10px 0px;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.12);
 }
 
