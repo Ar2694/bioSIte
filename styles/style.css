@@ -1,12 +1,13 @@
 /** Global style**/
 html {
+    background-color: #14220A;
     overflow-x: hidden;
 }
 body {
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.953em;
-    min-width: 520px;
+
     width: 100%;
 }
 body::before {
@@ -41,7 +42,7 @@ nav {
     box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
     background-color: rgba(164, 156, 116, 0.8);
     border-bottom: 5px ridge rgba(248,234,165,0.97);
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     padding: 12px 40px;
@@ -57,6 +58,7 @@ nav .nav-content div {
 }
 
 nav h5 {
+    cursor: default;
     margin: 0;
     color: #FFFFFF;
     font-style: italic;
@@ -92,28 +94,38 @@ nav a:hover {
 .banner {
     height: 750px;
     margin: 0;
+    text-align: center;
 }
 
 .banner h1 {
-
-    color: rgb(253,245,246);
+    background-color: rgba(164,156,117,0.27);
+    border: 5px ridge rgba(248,234,165,0.97);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
+    color: #FFFFFF;
     text-align: center;
     line-height: 650px;
     font-weight: 400;
     font-style: italic;
     font-size: 1.563em;
-    margin: 0;
+    padding: 40px 80px;
+
+    display: inline;
+    margin: 0 auto;
+    cursor: default;
 }
 
 /** Biography **/
 
 .main-content {
     margin: 0 auto;
-    background-color: rgba(236, 226, 176, 0.85);
+    background-color: rgba(236,226,176,0.89);
     -webkit-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
     box-shadow: 0 0 39px 30px rgba(0,0,0,0.75);
-    border: 10px ridge rgba(248,234,165,0.97);
+    border: 5px ridge rgba(248,234,165,0.97);
     border-bottom: none;
     border-radius: 10px 10px 0 0;
     max-width: 1360px;
@@ -133,14 +145,14 @@ nav a:hover {
     -webkit-box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
     box-shadow: 1px 0 41px 11px rgba(0,0,0,0.75);
-    border: 4px ridge rgba(248,234,165,0.97);
+    border: 5px ridge rgba(248,234,165,0.97);
     border-radius: 20px;
 
 }
 
 .intro h2 {
     font-size: 1em;
-    margin-left: 350px;
+    margin-left: 325px;
     padding-top: 20px;
     width: 100%;
     text-align: left;
@@ -148,7 +160,7 @@ nav a:hover {
 
 .intro p {
     margin: 10px;
-
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.12);
 }
 
 /*** Photo Album **/
@@ -156,7 +168,7 @@ h2#favoritePhotos {
     font-size: 1em;
     text-align: center;
     margin-top: 85px;
-    border-top: 10px ridge rgba(248,234,165,0.97);
+    border-top: 5px ridge rgba(248,234,165,0.97);
     padding-top: 20px;
 }
 .main-content .row:not(.intro) {
@@ -173,7 +185,6 @@ h2#favoritePhotos {
 .row .even,
 .row .odd {
 
-    border-bottom: 10px ridge rgba(248,234,165,0.97);
     padding: 50px 15px;
 
 }
@@ -187,16 +198,17 @@ figure * {
 }
 
 figure figcaption {
-    font-size: 0.64em;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.15);
+    font-size: 0.65em;
     font-weight: 600;
     width: 300px;
     text-align: center;
 }
 
 figure img {
-    -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
-    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0 0 35px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 35px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 35px 0 rgba(0,0,0,0.75);
     border: 5px ridge rgba(248,234,165,0.97);
     border-radius: 20px;
     padding: 1px;
@@ -234,21 +246,22 @@ footer {
     width: 100%;
     background-color: rgba(164, 156, 116, 0.8);
     box-sizing: content-box!important;
-    border-top: 5px solid rgba(236, 226, 176, 0.85);
+    border-top: 5px ridge rgba(236, 226, 176, 0.85);
     color: #ECE2B0;
 }
 
 footer p {
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.15);
     text-align: center;
     padding: 20px 50px;
     margin-bottom: 0;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1016px) {
     /** Global style **/
     body {
         font-size: 1.6em;
     }
-    
+
     /**Biography**/
     .intro {
 
@@ -272,4 +285,30 @@ footer p {
         margin-bottom: 20px;
     }
 
+}
+
+@media only screen and (max-width: 620px) {
+    .banner h1 {
+        font-size: 1.163em;
+        padding: 20px 40px;
+    }
+
+    .intro img {
+        margin: 20px 26%;
+
+    }
+
+    .intro h2 {
+        font-size: 1em;
+        margin: auto 0;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro p {
+
+        margin: 10px;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.12);
+    }
 }
